@@ -1,6 +1,7 @@
 import React from "react";
 import MessagesDisplay from "./components/MessagesDisplay";
 import CodeDisplay from "./components/CodeDisplay";
+import "./app.css";
 
 const App = () => {
   return (
