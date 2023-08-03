@@ -3,7 +3,7 @@ import MessageDisplay from "./MessageDisplay";
 
 const MessagesDisplay = () => {
   return (
-    <div className="message-display">
+    <div className="messages-display">
       <MessageDisplay />
     </div>
   );
