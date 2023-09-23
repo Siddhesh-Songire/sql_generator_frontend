@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import MessagesDisplay from "./components/MessagesDisplay";
 import CodeDisplay from "./components/CodeDisplay";
 import "./app.css";
@@ -26,7 +26,10 @@ const App = () => {
           message: value,
         }),
       };
-      const response = await fetch("http://localhost:8000", options);
+      const response = await fetch(
+        "https://sql-backend-eqpg.onrender.com/",
+        options
+      );
       const data = await response.json();
       console.log(data);
       console.log(data.chatCompletion.content);
