@@ -39,6 +39,44 @@ input {
   overflow: hidden;
 }
 
+.code-output {
+  margin: 20px;
+}
+
+.code-output p {
+  color: rgb(255, 189, 45);
+}
+
+/* CSS for the loader and CodeDisplay container */
+.code-display-container {
+  position: relative; /* Make sure the container is positioned relative */
+}
+
+.loader {
+  position: absolute;
+  top: 50%; /* Position the loader at 50% from the top */
+  left: 50%; /* Position the loader at 50% from the left */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the loader both horizontally and vertically */
+  border: 4px solid yellow; /* Loader border color */
+  border-radius: 50%;
+  border-top: 4px solid transparent; /* Loader top border color (yellow) */
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite; /* Rotate the loader */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .buttons {
   width: 100%;
   height: 35px;
